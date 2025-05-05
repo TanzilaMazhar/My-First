@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            height: 30vh;
+            width: 20vh;
+            box-sizing: border-box;
+            background-color: rgb(27, 27, 27);
+        }
+
+        form {
+            margin-top: 50px;
+            height: 60%;
+            width: 40%;
+            background-color: rgb(27, 27, 27);
+            padding: 30px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            height: 30px;
+            width: 250px;
+            background-color: rgb(85, 83, 83);
+            color: white;
+        }
+
+        input placeholder {
+            color: white;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 10px;
+            height: 40px;
+            width: 280px;
+            background-color: rgb(85, 83, 83);
+            color: white;
+            cursor: pointer;
+        }
+
+        .sign-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .google-logo {
+            width: 20px;
+            height: 20px;
+            color: black;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form action="">
+            <i class="fa-solid fa-star"></i>
+            <h1>Bento Social</h1>
+            <input type="text" placeholder="Email"> <br> <br>
+            <input type="text" name="" id="" placeholder="Password"> <br> <br>
+            <button>Sign In</button> <br> <br>
+            <button class="sign-btn" onclick="signIn()">
+                <img class="google-logo" src="googlelogo.png" alt="">
+                Sign-in with Google
+            </button><br> <br>
+            <p>Don't have an account? Sign-up, it's freel</p>
+        </form>
+    </center>
+
+    <script>
+        function signIn() {
+            window.open(
+                'https://accounts.google.com/AccountChooser?continue=https://www.google.com',
+                'GoogleSignIn',
+                'width=500,height=600,top=100,left=100'
+            );
+        }
+    </script>
+</body>
+
+</html>
